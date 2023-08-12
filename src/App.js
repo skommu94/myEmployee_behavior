@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import EmployeeCardCollection from "./components/EmployeeCardCollection";
 import './App.scss';
+import db from './db.json';
+
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      employees: [],
+      employees: db.employees,
       selectedEmployeeId: '',
       isEditing: false,
       editorId: '',
@@ -43,7 +45,7 @@ class App extends Component {
 
 
   fetchData = () => {
-    fetch("http://localhost:5000/employees")
+    fetch("")
       .then((response) => response.json())
       .then((data) => this.setState({ employees: data }));
   };
