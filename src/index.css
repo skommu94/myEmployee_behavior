@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Reset default margin and padding */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styling for the app container */
+.app {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 2rem;
+}
+
+/* Styling for the header */
+.header {
+  margin-bottom: 1rem;
+}
+
+/* Styling for input fields */
+input[type="text"] {
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+/* Styling for buttons */
+button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Styling for employee cards */
+.employee-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for employee card collection */
+.employee-card-collection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.employee-card-collection h1{
+  width: 100%;
+}
+/* Styling for avatar images */
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+/* Styling for the find section */
+.find-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.find-section > div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.find-section label {
+  flex: 0 0 max-content;
+  text-align: right;
+  font-weight: bold;
+}
+
+.find-section input {
+  flex: minmax(3rem, 10rem);
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.find-section button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.find-section button:hover {
+  background-color: #0056b3;
+}
+
+.find-section button.save-btn{
+  width: 100px;
+  margin-left: 3rem;
+}
+
+/* Additional styling for error messages */
+p.error {
+  color: red;
+  font-weight: bold;
+}
+
+/* Additional styling for success messages */
+p.success {
+  color: green;
+  font-weight: bold;
+}
